@@ -867,7 +867,8 @@ section {
     padding: 0 0 70px 0;
     color: #212529;
     font-size: 14px;
-    background: #fef8f5;
+    /* background: rgb(236, 255, 220); */
+    background-image: linear-gradient(rgb(240, 211, 184), rgb(255, 255, 255));
 }
 
 #footer .footer-top {
