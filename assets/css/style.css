@@ -1,4 +1,3 @@
-
 body {
     font-family: "Muli", sans-serif;
     color: #212529;
@@ -591,7 +590,7 @@ section {
 .team .member {
     text-align: center;
     margin-bottom: 20px;
-    background: rgb(203,203,203);
+    background: rgb(203, 203, 203);
     position: relative;
     overflow: hidden;
 }
@@ -1026,6 +1025,7 @@ section {
     }
 }
 
+
 /* css for blog */
 
 .responsive-iframe {
@@ -1037,4 +1037,4 @@ section {
     width: 100%;
     height: 100%;
     border: none;
-  }
+}
