@@ -8,10 +8,11 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+
+/* a:hover {
     color: #ef7f4d;
     text-decoration: none;
-}
+} */
 
 h1,
 h2,
@@ -582,7 +583,65 @@ section {
 # Team
 --------------------------------------------------------------*/
 
-.team {
+#cards .card {
+    border-radius: 20px;
+    min-height: 100%;
+}
+
+#cards .heading-border {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+}
+
+#cards .card .user-picture img {
+    position: absolute;
+    top: -20%;
+    right: 10%;
+    background: #f8f9fa!important;
+    padding: 10px;
+}
+
+#cards .card .user-content .user-name {
+    margin-right: 150px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    background-color: rgb(152, 146, 146);
+}
+
+.fa-facebook {
+    background: rgb(0, 53, 64);
+    color: white;
+}
+
+.fa-twitter {
+    background: rgb(0, 53, 64);
+    color: white;
+}
+
+.fa-linkedin {
+    background: rgb(0, 53, 64);
+    color: white;
+}
+
+.fa-instagram {
+    background: rgb(0, 53, 64);
+    color: white;
+}
+
+
+/* .team {
     background: #fff;
     padding: 60px 0;
 }
@@ -669,6 +728,7 @@ section {
     left: 0;
     transition: left ease-in-out 0.3s;
 }
+ */
 
 
 /*--------------------------------------------------------------
