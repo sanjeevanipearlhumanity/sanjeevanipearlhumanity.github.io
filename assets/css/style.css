@@ -526,7 +526,8 @@ section {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .donationbtn {
@@ -536,8 +537,9 @@ section {
     text-align: center;
     border: 1px solid #6db070;
     display: inline-block;
-    font-size: 16px;
-    border-radius: 8px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 .donationbtn:hover {
