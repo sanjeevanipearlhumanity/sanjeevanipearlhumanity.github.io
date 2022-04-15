@@ -522,24 +522,25 @@ section {
 .btn {
     background-color: #3b5d87;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
-    font-weight: bold;
+    border: 2px solid #3b5d87;
+    text-align: center;
+    margin: auto;
 }
 
 .donationbtn {
     background-color: #6db070;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 32px;
     text-align: center;
     border: 1px solid #6db070;
     display: inline-block;
     font-size: 18px;
     border-radius: 5px;
-    font-weight: bold;
 }
 
 .donationbtn:hover {
