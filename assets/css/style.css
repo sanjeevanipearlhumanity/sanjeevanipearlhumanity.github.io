@@ -520,8 +520,7 @@ section {
 }
 
 .btn {
-    background-color: #6db070;
-    border: none;
+    background-color: #3b5d87;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -530,9 +529,26 @@ section {
     font-size: 16px;
 }
 
+.donationbtn {
+    background-color: #6db070;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border: 1px solid #6db070;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.donationbtn:hover {
+    background-color: #8cd68f;
+    border: 1px solid #8cd68f;
+    color: white;
+}
+
 .btn:hover {
-    background-color: #92d996;
-    border: none;
+    background-color: #5d729c;
+    border: 2px solid #5d729c;
     color: white;
 }
 
