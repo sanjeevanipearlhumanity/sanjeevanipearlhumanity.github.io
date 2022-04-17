@@ -332,7 +332,7 @@
 
                     <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
 
-                        <form action="https://formsubmit.co/sanjeevanipearl@gmail.com" method="POST" class="php-email-form">
+                        <form method="POST" class="php-email-form">
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label for="name">Your Name</label>
@@ -349,10 +349,10 @@
                             </div>
                             <div class="form-group mt-3">
                                 <label for="name">Message</label>
-                                <textarea class="form-control" name="message" rows="10" required></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="10" required></textarea>
                             </div>
 
-                            <div class="text-center"><button type="submit">Send Message</button></div>
+                            <div class="text-center"><button id="btn" type="submit">Send Message</button></div>
                         </form>
                     </div>
 
@@ -431,6 +431,30 @@
 
 
     <script src="assets/js/main.js"></script>
+
+     <!-- smtp cdn link -->
+     <script src = "https://smtpjs.com/v3/smtp.js"></script>
+     <script>
+             var btn = document.getElementById('btn');
+             btn.addEventListener('click',function(e)
+             {
+                 e.preventDefault()
+                 Email.send({
+                 Host : "smtp.gmail.com",
+                 Username : "et.example.test@gmail.com",
+                 Password : "veejdstkhnnjrsvw",
+                 To : 'sanjeevanipearl@gmail.com',
+                 From : document.getElementById("email").value,
+                 Subject : "New Coantact Form Enquiry",
+                 Body : "Name: " + document.getElementById("name").value
+                         + "<br> Email: " + document.getElementById("email").value
+                         + "<br> Subject: " + document.getElementById("subject").value
+                         + "<br> Message: " + document.getElementById("message").value
+             }).then(
+             message => alert("Message Sent Successfully, Thanks for Contacting Us !")
+             );
+             })
+     </script>
 
 
 </body>
