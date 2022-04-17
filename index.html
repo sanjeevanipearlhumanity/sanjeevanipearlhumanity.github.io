@@ -352,7 +352,7 @@
                                 <textarea class="form-control" id="message" name="message" rows="10" required></textarea>
                             </div>
 
-                            <div class="text-center"><button id="btn" type="submit">Send Message</button></div>
+                            <div class="text-center"><button id="btn" type="submit" onclick="alert('Message Sent Successfully, Thanks for Contacting Us!');window.location.reload();">Send Message</button></div>
                         </form>
                     </div>
 
@@ -445,14 +445,14 @@
                  Password : "veejdstkhnnjrsvw",
                  To : 'sanjeevanipearl@gmail.com',
                  From : document.getElementById("email").value,
-                 Subject : "New Coantact Form Enquiry",
+                 Subject : document.getElementById("subject").value ,
                  Body : "Name: " + document.getElementById("name").value
                          + "<br> Email: " + document.getElementById("email").value
                          + "<br> Subject: " + document.getElementById("subject").value
                          + "<br> Message: " + document.getElementById("message").value
-             }).then(
-             message => alert("Message Sent Successfully, Thanks for Contacting Us !")
-             );
+             })
+            //  .then(
+            //  message => alert("Message Sent Successfully, Thanks for Contacting Us !"));
              })
      </script>
 
