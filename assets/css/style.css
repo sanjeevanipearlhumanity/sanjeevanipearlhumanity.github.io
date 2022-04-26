@@ -195,7 +195,7 @@ h6,
 
 @media (max-width: 991px) {
     .mobile-nav-toggle {
-        display: ceck;
+        display: block;
     }
     .navbar ul {
         display: none;
